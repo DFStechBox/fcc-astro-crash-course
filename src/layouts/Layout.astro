@@ -4,7 +4,7 @@ import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
 	title: string;
-	description: string;
+	description?: string;
 	image?: string;
 
 }
@@ -21,7 +21,7 @@ const { title, description="A community of music producers and enthusiasts", ima
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="'og:image" content="{image}" />
-		<ViewTransitions
+		<ViewTransitions />
 		<title>{title}</title>
 	</head>
 	<body  class="min-h-screen">
